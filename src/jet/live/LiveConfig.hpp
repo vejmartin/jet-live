@@ -21,5 +21,12 @@ namespace jet
          * If `true`, also reload code when app receives `SIGUSR1`.
          */
         bool reloadOnSignal = true;
+
+        /**
+         * The full path pointing to the `compile_commands.json`
+         * that is to be used instead of the default parent directory search
+         * behaviour.
+         */
+         std::string compileCommandsPath;
     };
 }
